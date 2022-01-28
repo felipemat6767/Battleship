@@ -15,14 +15,21 @@ code {
 .Board{
 display: flex;
 flex-wrap: wrap;
-height: 1120px;
+height: 1220px;
+width: 100%;
 }
 
 .Board div{
-  width:150px;
+  width:120px;
   height: 100px;
-  background-color: bisque;
-  border: 2px solid black;
+  border: 1px solid black;
+  margin: 0px 2px;
+}
+
+.row div{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
 .none{
@@ -30,77 +37,15 @@ height: 1120px;
   border: none;
 }
 
-.container{
-  display: flex;
+.red{
+  background-color: red;
 }
 
-.grid-player{
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 10px;
-  background-color: brown;
+.blue{
+  background-color: aquamarine;
 }
-
-.grid-player div{
-  width: 40px;
-}
-
-
-.grid-pc{
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(42, 165, 63);
-}
-.grid-pc div{
-  width: 40px;
-}
-
-.display{
-  width: 400px;
-  height: 400px;
-  background-color: rgb(223, 226, 50);
-  margin: 20px;
-}
-
-.destroyer-cont{
-  width: 80px;
-  height: 40px;
-  background-color: darkorange;
-  margin: 10px;
-  display: flex;
-}
-.destroyer{
-  background-color: darkorange;
-}
-
-.submarine-cont{
-  width: 120px;
-  height: 40px;
-  background-color: rgb(47, 0, 255);
-  margin: 10px;
-  display: flex;
-}
-
-.cruiser-cont{
-  width: 80px;
-  height: 40px;
-  background-color: rgb(255, 0, 0);
-  margin: 10px;
-  display: flex;
-}
-
-.battleship-cont{
-  width: 160px;
-  height: 40px;
-  background-color: rgb(255, 0, 157);
-  margin: 10px;
-  display: flex;
-}
-.ship div{
-  width: 40px;
-  height: 40px;
+.border{
+  border: 5px solid rgb(255, 0, 0)!important;
+  background-color: black;
+ 
 }
